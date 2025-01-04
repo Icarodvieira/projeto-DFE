@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial; 
+    background-color: #eaf4e7; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium';
+}
+
+header {
+    background-color: #38743a; 
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI';
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4CAF50; 
+}
+
+section img {
+    border-radius: 8px;
+    margin: 10px;
+}
+
+section {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: 'Trebuchet MS';
+}
+
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 15px;
+    padding: 10px;
+    color: #555;
+}
+
+.autor {
+    font-size: 1.1em;         
+    font-weight: bold;        
+    color: #333;              
+    font-family: 'Georgia', serif;          
+    letter-spacing: 1px;      
+    text-transform: uppercase;  
+}
+
+.cargo {
+    font-size: 1.1em;
+    color: #444;
+    margin-top: 10px;
+    margin-bottom: 15px; 
+}
+
+.empresa {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 10px;
+}
+
+.periodo {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Georgia;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) td {
+    background-color: #cbd2d4c1;
+}
+
+tr:hover td {
+    background-color: #bdc3c7;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+}
+
+fieldset {
+    border: none; 
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049b7;
+}
+
+textarea{
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
