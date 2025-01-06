@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>Página do Ícaro Vieira</h1>
         <hr>
@@ -16,26 +17,59 @@
             <a href="curriculo.html">Currículo</a>
             <a href="citacoes.html">Citações</a>
             <a href="hobbies.html">Hobbies</a>
-            <a href="favoritos.html">Favoritos</a>
             <a href="horario.html">Horários</a>
             <a href="marcar.html">Marcar horário</a>
         </nav>
         <hr>
     </header>
-    <section>
-        <img src="./imagens/foto_perfil.jpeg" width="300" height="300" alt="Foto de perfil">
-        <h3>Nessa página você saberá mais sobre mim.</h3>
-        <p>Cada um dos itens do menu leva à uma página com conteúdo sobre mim.</p>
-        <p><strong>Clicando nos links acima você deve ser redirecionado para uma página com conteúdos.</strong></p>
-        <img src="./imagens/praia.jpg" width="120" height="150" alt="`Praia">
-        <img src="./imagens/trilha.jpg" width="120" height="150" alt="Trilha">
-        <img src="./imagens/persch.jpg" width="120" height="150" alt="Eu e minha namorada">
-    </section>
+    
+    <div class="container">
+        <!-- Parte Esquerda (Texto e Foto de Perfil) -->
+        <div class="left-section">
+            <div class="profile-container">
+                <img src="./imagens/foto_perfil.jpeg" width="300" height="300" alt="Foto de perfil">
+                <div class="profile-text">
+                    <h3>Nessa página você saberá mais sobre mim.</h3>
+                    <p>Cada um dos itens do menu leva à uma página com conteúdo sobre mim.</p>
+                    <h4>Clicando nos links acima você deve ser redirecionado para uma página com conteúdos.</h4>
+                </div>
+            </div>
+            <div class="images-container">
+                <img src="./imagens/praia.jpg" width="120" height="150" alt="Praia">
+                <img src="./imagens/trilha.jpg" width="120" height="150" alt="Trilha">
+                <img src="./imagens/persch.jpg" width="120" height="150" alt="Eu e minha namorada">
+            </div>
+        </div>
+
+        <!-- Parte Direita (Aba Lateral com Favoritos e Contatos) -->
+        <div class="right-section">
+            <!-- Favoritos -->
+            <div class="favorites">
+                <h2>Favoritos</h2>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+
+            <!-- Contatos -->
+            <div class="contacts">
+                <h2>Contatos</h2>
+                <div class="social-icons">
+                    <i class="icon-facebook">Facebook</i>
+                    <i class="icon-twitter">Twitter</i>
+                    <i class="icon-instagram">Instagram</i>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <hr>
     <footer>
         <p>Feito por Ícaro Vieira</p>
     </footer>
     <hr>
+
 </body>
 </html>

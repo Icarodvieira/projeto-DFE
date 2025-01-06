@@ -9,6 +9,7 @@ body {
     background-color: #eaf4e7; 
     color: #333; 
     line-height: 1.6;
+    
 }
 
 h3{
@@ -168,4 +169,108 @@ textarea{
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Seção Esquerda (Texto e Fotos) */
+.left-section {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Perfil - Foto de Perfil e Texto ao lado */
+.profile-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-container img {
+    border-radius: 50%;
+}
+
+/* Texto do Perfil */
+.profile-text h3, .profile-text p, .profile-text h4 {
+    margin: 0;
+}
+
+/* Fotos abaixo do Perfil */
+.images-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.images-container img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.images-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção Direita (Aba Lateral com Favoritos e Contatos) */
+.right-section {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Título da Seção */
+.right-section h2 {
+    margin-top: 0;
+}
+
+/* Estilo para a lista de Favoritos */
+.favorites ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorites li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para a seção de Contatos */
+.contacts .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons i {
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
