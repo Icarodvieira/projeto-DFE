@@ -3,47 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Página do Ícaro Vieira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-hobbies.css">
 </head>
 <body>
+    <div class="main-container">
+        <header>
+            <a href="index.html"><h1>Página do Ícaro Vieira</h1></a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="curriculo.html">Currículo</a>
+                <a href="citacoes.html">Citações</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="horario.html">Horários</a>
+                <a href="marcar.html">Marcar horário</a>
+            </nav>
+        </header>
+        
+        <div class="conteudo">
+            <div class="secao-esquerda">
+                <h3>Hobbies</h3><br>
+                <h3>Futebol</h3>
+                <div class="imagens">
+                    <img src="./imagens/futebol_puc.jpg" width="150" height="150" alt="Futebol">
+                    <img src="./imagens/alnask.jpg" width="200" height="150" alt="Jogo do Al Nask">
+                    <img src="./imagens/beirario.jpg" width="100" height="150" alt="Beira Rio">
+                </div>
+                <p class = "texto-hobbies">Costumo frequentar o Beira Rio, estádio do Inter, sempre que possível. Além disso, jogo futebol society 3x por semana.</p>
+                <h3>Corrida</h3>
+                <div class="imagens">
+                    <img src="./imagens/cais.jpg" width="150" height="150" alt="Cais">
+                    <img src="./imagens/corrida-rio.jpg" width="200" height="150" alt="Corrida na Cidade">
+                    <img src="./imagens/corrida.jpg" width="100" height="150" alt="Corrida ao Ar Livre">
+                </div>
+                <p class = "texto-hobbies">Comecei junto da minha namorada a correr pela cidade. Iniciamos com uma meta de correr pelo menos 3x por semana e tem sido muito bom!</p>
+            </div>
+            <div class="secao-direita">
+                <div class="favoritos">
+                    <h2>Favoritos</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br" target="_blank"><img src="./imagens/alura.jpeg" alt="Alura" class="icone-favorito"></a>
+                            <a href="https://www.alura.com.br" target="_blank">Alura - Plataforma com diversos cursos de programação.</a>
+                        </li>
+                        <li>
+                            <a href="https://suap.ifsul.edu.br/" target="_blank"><img src="./imagens/suap.jpeg" alt="SUAP IFSul" class="icone-favorito"></a>
+                            <a href="https://suap.ifsul.edu.br/" target="_blank">SUAP - Registro de notas e informações acadêmicas.</a>
+                        </li>
+                        <li>
+                            <a href="https://apnp.ifsul.edu.br/" target="_blank"><img src="./imagens/moodle.svg.png" alt="APNP IFSul" class="icone-favorito"></a>
+                            <a href="https://apnp.ifsul.edu.br/" target="_blank">APNP - Plataforma de atividades do IFSul.</a>
+                        </li>
+                        <li>
+                            <a href="https://socio.internacional.com.br/pt/" target="_blank" ><img src="./imagens/mundo-colorado.jpg" alt="Mundo Colorado" class="icone-favorito"></a>
+                            <a href="https://socio.internacional.com.br/pt/" target="_blank" >Mundo Colorado - Portal de sócios do melhor time do RS.</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <header>
-        <h1>Página do Ícaro Vieira</h1>
-
-        <hr>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre mim</a>
-            <a href="curriculo.html">Currículo</a>
-            <a href="citacoes.html">Citações</a>
-            <a href="hobbies.html">Hobbies</a>
-            <a href="favoritos.html">Favoritos</a>
-            <a href="horario.html">Horários</a>
-            <a href="marcar.html">Marcar horário</a>
-        </nav>
-        <hr>
-    </header>
-
-    <section>
-        <h3>Hobbies</h3><br>
-            <h3>Futebol</h3>
-            <p>Costumo frequentar o Beira Rio, estádio do Inter, sempre que possível. Além disso, jogo futebol society 3x por semana.</p>
-                <img src="./imagens/futebol_puc.jpg" width="150" height="150" alt="Futebol">
-                <img src="./imagens/alnask.jpg" width="200" height="150" alt="Jogo do Al Nask">
-                <img src="./imagens/beirario.jpg" width="100" height="150" alt="Beira Rio">
-            <h3>Corrida</h3>
-            <p>Comecei junto da minha namorada a correr pela cidade. Iniciamos com uma meta de correr pelo menos 3x por semana e tem sido muito bom!</p>
-                <img src="./imagens/cais.jpg" width="150" height="150" alt="Cais">
-                <img src="./imagens/corrida-rio.jpg" width="200" height="150" alt="Corrida na Cidade">
-                <img src="./imagens/corrida.jpg" width="100" height="150" alt="Corrida ao Ar Livre">
-    </section>
-
-    <hr>
-    <footer>
-        <p>Feito por Ícaro Vieira</p>
-    </footer>
-    <hr>
-
+                <div class="contatos">
+                    <h2>Contatos</h2>
+                    <div class="icones-contatos">
+                        <a href="https://github.com/Icarodvieira" target="_blank" ><img src="imagens/git-icone.png"></a>
+                        <a href="https://www.linkedin.com/in/icarodvieira/" target="_blank" ><img src="imagens/LinkedIn_logo.png"></a>
+                        <a href="mailto:icarodvieira3@gmail.com" target="_blank" ><img src="imagens/gmail-icone.svg.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Ícaro Vieira. Todos os direitos reservados.</p>
+            <p>Desenvolvido como parte do curso de Front-End I</p>
+        </footer>
+    </div>
 </body>
 </html>

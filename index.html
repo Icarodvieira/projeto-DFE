@@ -7,69 +7,75 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Página do Ícaro Vieira</h1>
-        <hr>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre mim</a>
-            <a href="curriculo.html">Currículo</a>
-            <a href="citacoes.html">Citações</a>
-            <a href="hobbies.html">Hobbies</a>
-            <a href="horario.html">Horários</a>
-            <a href="marcar.html">Marcar horário</a>
-        </nav>
-        <hr>
-    </header>
-    
-    <div class="container">
-        <!-- Parte Esquerda (Texto e Foto de Perfil) -->
-        <div class="left-section">
-            <div class="profile-container">
-                <img src="./imagens/foto_perfil.jpeg" width="300" height="300" alt="Foto de perfil">
-                <div class="profile-text">
-                    <h3>Nessa página você saberá mais sobre mim.</h3>
-                    <p>Cada um dos itens do menu leva à uma página com conteúdo sobre mim.</p>
-                    <h4>Clicando nos links acima você deve ser redirecionado para uma página com conteúdos.</h4>
+    <div class="main-container">
+        <header>
+            <a href="index.html"><h1>Página do Ícaro Vieira</h1></a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="curriculo.html">Currículo</a>
+                <a href="citacoes.html">Citações</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="horario.html">Horários</a>
+                <a href="marcar.html">Marcar horário</a>
+            </nav>
+        </header>
+        
+        <div class="conteudo">
+            <div class="secao-esquerda">
+                <div class="container-perfil">
+                    <img src="./imagens/foto_perfil.jpeg" width="300" height="300" alt="Foto de perfil">
+                    <div class="texto-perfil">
+                        <h2>Nessa página você saberá mais sobre mim.</h2>
+                        <p>Cada um dos itens do menu leva à uma página com conteúdo sobre mim.</p>
+                        <h4>Clicando nos links acima você deve ser redirecionado para uma página com conteúdos.</h4>
+                    </div>
+                </div>
+                <div class="imagens">
+                    <img src="./imagens/praia.jpg" width="120" height="150" alt="Praia">
+                    <img src="./imagens/trilha.jpg" width="120" height="150" alt="Trilha">
+                    <img src="./imagens/persch.jpg" width="120" height="150" alt="Eu e minha namorada">
                 </div>
             </div>
-            <div class="images-container">
-                <img src="./imagens/praia.jpg" width="120" height="150" alt="Praia">
-                <img src="./imagens/trilha.jpg" width="120" height="150" alt="Trilha">
-                <img src="./imagens/persch.jpg" width="120" height="150" alt="Eu e minha namorada">
-            </div>
-        </div>
 
-        <!-- Parte Direita (Aba Lateral com Favoritos e Contatos) -->
-        <div class="right-section">
-            <!-- Favoritos -->
-            <div class="favorites">
-                <h2>Favoritos</h2>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-            </div>
+            <div class="secao-direita">
+                <div class="favoritos">
+                    <h2>Favoritos</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br" target="_blank"><img src="./imagens/alura.jpeg" alt="Alura" class="icone-favorito"></a>
+                            <a href="https://www.alura.com.br" target="_blank">Alura - Plataforma com diversos cursos de programação.</a>
+                        </li>
+                        <li>
+                            <a href="https://suap.ifsul.edu.br/" target="_blank"><img src="./imagens/suap.jpeg" alt="SUAP IFSul" class="icone-favorito"></a>
+                            <a href="https://suap.ifsul.edu.br/" target="_blank">SUAP - Registro de notas e informações acadêmicas.</a>
+                        </li>
+                        <li>
+                            <a href="https://apnp.ifsul.edu.br/" target="_blank"><img src="./imagens/moodle.svg.png" alt="APNP IFSul" class="icone-favorito"></a>
+                            <a href="https://apnp.ifsul.edu.br/" target="_blank">APNP - Plataforma de atividades do IFSul.</a>
+                        </li>
+                        <li>
+                            <a href="https://socio.internacional.com.br/pt/" target="_blank" ><img src="./imagens/mundo-colorado.jpg" alt="Mundo Colorado" class="icone-favorito"></a>
+                            <a href="https://socio.internacional.com.br/pt/" target="_blank" >Mundo Colorado - Portal de sócios do melhor time do RS.</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <!-- Contatos -->
-            <div class="contacts">
-                <h2>Contatos</h2>
-                <div class="social-icons">
-                    <i class="icon-facebook">Facebook</i>
-                    <i class="icon-twitter">Twitter</i>
-                    <i class="icon-instagram">Instagram</i>
+                <div class="contatos">
+                    <h2>Contatos</h2>
+                    <div class="icones-contatos">
+                        <a href="https://github.com/Icarodvieira" target="_blank" ><img src="imagens/git-icone.png"></a>
+                        <a href="https://www.linkedin.com/in/icarodvieira/" target="_blank" ><img src="imagens/LinkedIn_logo.png"></a>
+                        <a href="mailto:icarodvieira3@gmail.com" target="_blank" ><img src="imagens/gmail-icone.svg.png"></a>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <footer>
+                <p>© 2025 Ícaro Vieira. Todos os direitos reservados.</p>
+                <p>Desenvolvido como parte do curso de Front-End I</p>
+        </footer>
     </div>
-
-    <hr>
-    <footer>
-        <p>Feito por Ícaro Vieira</p>
-    </footer>
-    <hr>
-
 </body>
 </html>

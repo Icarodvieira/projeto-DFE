@@ -3,48 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Página do Ícaro Vieira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-sobre.css">
 </head>
 <body>
-    <header>
-        <h1>Página do Ícaro Vieira</h1>
+    <div class="main-container">
+        <header>
+            <a href="index.html"><h1>Página do Ícaro Vieira</h1></a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="curriculo.html">Currículo</a>
+                <a href="citacoes.html">Citações</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="horario.html">Horários</a>
+                <a href="marcar.html">Marcar horário</a>
+            </nav>
+        </header>
+        
+        <div class="conteudo">
+            
+            <div class="secao-esquerda">
+                <h3>Sobre mim</h3><br>
 
-        <hr>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre mim</a>
-            <a href="curriculo.html">Currículo</a>
-            <a href="citacoes.html">Citações</a>
-            <a href="hobbies.html">Hobbies</a>
-            <a href="favoritos.html">Favoritos</a>
-            <a href="horario.html">Horários</a>
-            <a href="marcar.html">Marcar horário</a>
-        </nav>
-        <hr>
-    </header>
+                <div class="imagens">
+                    <img src="./imagens/charqueadas.jpg" width="150" height="100"><br>
+                    <img src="./imagens/inter.png" width="120" height="100"><br>
+                    <img src="./imagens/pizza.jpg" width="150" height="100"><br>
+                </div>
 
-    <section>
-        <h3>Sobre mim</h3><br>
+                <div class="informacoes">
+                    <div class="informacao">
+                        <h3>Idade:</h3>
+                        <p>22 anos</p>
+                    </div>
+                    <div class="informacao">
+                        <h3>Cidade:</h3>
+                        <p>Charqueadas - RS</p>
+                    </div>
+                    <div class="informacao">
+                        <h3>Altura:</h3>
+                        <p>1.68m</p>
+                    </div>
+                    <div class="informacao">
+                        <h3>Profissão:</h3>
+                        <p>Analista de QA</p>
+                    </div>
+                    <div class="informacao">
+                        <h3>Time:</h3>
+                        <p>Internacional</p>
+                    </div>
+                    <div class="informacao">
+                        <h3>Comida favorita:</h3>
+                        <p>Pizza</p>
+                    </div>
+                    <div class="informacao">
+                        <h3>Email:</h3>
+                        <p>icarodvieira3@gmail.com</p>
+                    </div>
+                    <div class="informacao">
+                        <h3>Celular:</h3>
+                        <p>(51) 997366453</p>
+                    </div>
+                    <div class="informacao">
+                        <h3>Instagram:</h3>
+                        <p>@icarodvieira_</p>
+                    </div>
+                </div>
+            </div>
 
-        <h3>Idade:</h3> 22 anos<br><br>
-        <h3>Cidade:</h3> Charqueadas - RS<br>
-        <img src="./imagens/charqueadas.jpg" width="150" height="100"><br>
-        <h3>Altura:</h3> 1.68<br><br>
-        <h3>Profissão:</h3> Analista de QA<br><br>
-        <h3>Time:</h3> Internacional<br>
-        <img src="./imagens/inter.png" width="120" height="100"><br>
-        <h3>Comida favorita:</h3> Pizza<br>
-        <img src="./imagens/pizza.jpg" width="150" height="100"><br>
-        <h3>Email:</h3> icarodvieira3@gmail.com
-
-    </section>
-
-    <hr>
-    <footer>
-        <p>Feito por Ícaro Vieira</p>
+            
+            <div class="secao-direita">
+                <div class="favoritos">
+                    <h2>Favoritos</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br" target="_blank"><img src="./imagens/alura.jpeg" alt="Alura" class="icone-favorito"></a>
+                            <a href="https://www.alura.com.br" target="_blank">Alura - Plataforma com diversos cursos de programação.</a>
+                        </li>
+                        <li>
+                            <a href="https://suap.ifsul.edu.br/" target="_blank"><img src="./imagens/suap.jpeg" alt="SUAP IFSul" class="icone-favorito"></a>
+                            <a href="https://suap.ifsul.edu.br/" target="_blank">SUAP - Registro de notas e informações acadêmicas.</a>
+                        </li>
+                        <li>
+                            <a href="https://apnp.ifsul.edu.br/" target="_blank"><img src="./imagens/moodle.svg.png" alt="APNP IFSul" class="icone-favorito"></a>
+                            <a href="https://apnp.ifsul.edu.br/" target="_blank">APNP - Plataforma de atividades do IFSul.</a>
+                        </li>
+                        <li>
+                            <a href="https://socio.internacional.com.br/pt/" target="_blank" ><img src="./imagens/mundo-colorado.jpg" alt="Mundo Colorado" class="icone-favorito"></a>
+                            <a href="https://socio.internacional.com.br/pt/" target="_blank" >Mundo Colorado - Portal de sócios do melhor time do RS.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contatos">
+                    <h2>Contatos</h2>
+                    <div class="icones-contatos">
+                        <a href="https://github.com/Icarodvieira" target="_blank" ><img src="imagens/git-icone.png"></a>
+                        <a href="https://www.linkedin.com/in/icarodvieira/" target="_blank" ><img src="imagens/LinkedIn_logo.png"></a>
+                        <a href="mailto:icarodvieira3@gmail.com" target="_blank" ><img src="imagens/gmail-icone.svg.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Ícaro Vieira. Todos os direitos reservados.</p>
+            <p>Desenvolvido como parte do curso de Front-End I</p>
     </footer>
-    <hr>
-
+    </div>
 </body>
 </html>

@@ -9,24 +9,34 @@ body {
     background-color: #eaf4e7; 
     color: #333; 
     line-height: 1.6;
-    
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 90%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 h3{
     font-size: 1.5rem;
     font-family: 'Franklin Gothic Medium';
+    text-align: center;
 }
 
 header {
     background-color: #38743a; 
-    padding: 20px;
-    color: white;
-    text-align: center;
 }
-
 header h1 {
     font-size: 2.5rem;
     font-family: 'Segoe UI';
+    text-align: center;
+}
+header a{
+    text-decoration: none;
+    color: white;
 }
 
 nav {
@@ -38,239 +48,116 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #ecf0f1;
     font-weight: bold;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
-
 nav a:hover {
     color: #4CAF50; 
 }
 
-section img {
-    border-radius: 8px;
-    margin: 10px;
-}
-
-section {
-    text-align: center;
-    margin: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-
-footer p {
-    font-size: 1rem;
-    font-family: 'Trebuchet MS';
-}
-
-
-blockquote {
-    font-style: italic;
-    font-size: 1.2em;
-    margin: 15px;
-    padding: 10px;
-    color: #555;
-}
-
-.autor {
-    font-size: 1.1em;         
-    font-weight: bold;        
-    color: #333;              
-    font-family: 'Georgia', serif;          
-    letter-spacing: 1px;      
-    text-transform: uppercase;  
-}
-
-.cargo {
-    font-size: 1.1em;
-    color: #444;
-    margin-top: 10px;
-    margin-bottom: 15px; 
-}
-
-.empresa {
-    font-weight: bold;
-    color: #2c3e50;
-    margin-right: 10px;
-}
-
-.periodo {
-    font-style: italic;
-    color: #7f8c8d;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-family: Georgia;
-}
-
-th, td {
-    padding: 5px;
-    border: 1px solid #ddd;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1.1em;
-}
-
-tr:nth-child(even) td {
-    background-color: #cbd2d4c1;
-}
-
-tr:hover td {
-    background-color: #bdc3c7;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-label {
-    font-weight: 600;
-    color: #555;
-}
-
-fieldset {
-    border: none; 
-}
-
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 10px;
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049b7;
-}
-
-textarea{
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Container Principal */
-.container {
+.conteudo {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     padding: 20px;
 }
 
-/* Seção Esquerda (Texto e Fotos) */
-.left-section {
+.secao-esquerda {
     flex: 1;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
 }
 
-/* Perfil - Foto de Perfil e Texto ao lado */
-.profile-container {
+.container-perfil {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-bottom: 20px;
 }
-
-.profile-container img {
+.container-perfil img {
     border-radius: 50%;
 }
 
-/* Texto do Perfil */
-.profile-text h3, .profile-text p, .profile-text h4 {
-    margin: 0;
-}
-
-/* Fotos abaixo do Perfil */
-.images-container {
+.imagens {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
-
-.images-container img {
+.imagens img {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-
-.images-container img:hover {
-    transform: scale(1.05);
+.imagens img:hover {
+    transform: scale(1.15);
 }
 
-/* Seção Direita (Aba Lateral com Favoritos e Contatos) */
-.right-section {
+
+.secao-direita {
     width: 20%;
-    background-color: rgba(0, 0, 0, 0.1);
+    height: 580px;
+    background-color: rgba(78, 124, 72, 0.1);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow-y: auto;
+}
+.secao-direita h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
-/* Título da Seção */
-.right-section h2 {
-    margin-top: 0;
+.favoritos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
 }
 
-/* Estilo para a lista de Favoritos */
-.favorites ul {
-    list-style-type: none;
-    padding: 0;
+.favoritos a{
+    text-decoration: none;
+    color: #333; 
+    font-family: Verdana, sans-serif;
+    transition: color 0.3s;
+}
+.favoritos a:hover {
+    color: #4CAF50; 
 }
 
-.favorites li {
-    margin-bottom: 10px;
+.icone-favorito {
+    width: 80px; 
+    height: auto;
+    margin-right: 10px; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease;
+}
+.icone-favorito:hover{
+    transform: scale(1.05);
 }
 
-/* Estilo para a seção de Contatos */
-.contacts .social-icons {
+
+.icones-contatos {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
-
-.social-icons i {
-    background-color: #ccc;
+.icones-contatos img {
     padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
+    width: 80px; 
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+.icones-contatos img:hover{
+    transform: scale(1.05);
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .right-section {
-        width: 100%;
-    }
-
-    .images-container {
-        flex-direction: column;
-        align-items: center;
-    }
+footer {
+    background-color: #38743a;  
+    color: #ecf0f1;  
+    padding: 20px;  
+    text-align: center; 
+    font-family: 'Trebuchet MS';
 }

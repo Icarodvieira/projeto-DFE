@@ -1,0 +1,25 @@
+.container-experiencia{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.texto-experiencia{
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.cargo {
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.empresa {
+    color: #2c3e50;
+}
+
+.periodo {
+    font-style: italic;
+    color: #7f8c8d;
+}

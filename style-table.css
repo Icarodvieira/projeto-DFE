@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Georgia;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) td {
+    background-color: #cbd2d4c1;
+}
+
+tr:hover td {
+    background-color: #bdc3c7;
+}
+
+.secao-esquerda {
+    text-align: center;
+}
+

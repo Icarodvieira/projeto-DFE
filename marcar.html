@@ -1,78 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Página do Ícaro Vieira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-form.css">
 </head>
 <body>
-    
-    <header>
-        <h1>Página do Ícaro Vieira</h1>
+    <div class="main-container">
+        <header>
+            <a href="index.html"><h1>Página do Ícaro Vieira</h1></a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="curriculo.html">Currículo</a>
+                <a href="citacoes.html">Citações</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="horario.html">Horários</a>
+                <a href="marcar.html">Marcar horário</a>
+            </nav>
+        </header>
+        <div class="conteudo">
+            <div class="secao-esquerda">
+                <h3>Marcar horário</h3>
+                <form action="./index.html">
+                    <fieldset>
+                        <br>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" required><br><br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="assunto">Assunto:</label><br>
+                        <input type="text" id="assunto" name="assunto" required><br><br>
+                        <label for="idade">Idade:</label><br>
+                        <input type="number" id="idade" name="idade" min="1" required><br><br>
+                        <label for="sexo">Sexo:</label><br>
+                        <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="outro" name="sexo" value="outro" required>
+                        <label for="outro">Outro</label><br><br>
+                        <label for="data">Dia:</label><br>
+                        <input type="date" id="data" name="data" required><br><br>
+                        <label for="horario">Horário:</label><br>
+                        <input type="time" id="horario" name="horario" required><br><br>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+                        <label for="arquivo">Adicionar Arquivo:</label><br>
+                        <input type="file" id="arquivo" name="arquivo"><br><br>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="secao-direita">
+                <div class="favoritos">
+                    <h2>Favoritos</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.alura.com.br" target="_blank"><img src="./imagens/alura.jpeg" alt="Alura" class="icone-favorito"></a>
+                            <a href="https://www.alura.com.br" target="_blank">Alura - Plataforma com diversos cursos de programação.</a>
+                        </li>
+                        <li>
+                            <a href="https://suap.ifsul.edu.br/" target="_blank"><img src="./imagens/suap.jpeg" alt="SUAP IFSul" class="icone-favorito"></a>
+                            <a href="https://suap.ifsul.edu.br/" target="_blank">SUAP - Registro de notas e informações acadêmicas.</a>
+                        </li>
+                        <li>
+                            <a href="https://apnp.ifsul.edu.br/" target="_blank"><img src="./imagens/moodle.svg.png" alt="APNP IFSul" class="icone-favorito"></a>
+                            <a href="https://apnp.ifsul.edu.br/" target="_blank">APNP - Plataforma de atividades do IFSul.</a>
+                        </li>
+                        <li>
+                            <a href="https://socio.internacional.com.br/pt/" target="_blank" ><img src="./imagens/mundo-colorado.jpg" alt="Mundo Colorado" class="icone-favorito"></a>
+                            <a href="https://socio.internacional.com.br/pt/" target="_blank" >Mundo Colorado - Portal de sócios do melhor time do RS.</a>
+                        </li>
+                    </ul>
+                </div>
 
-        <hr>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre mim</a>
-            <a href="curriculo.html">Currículo</a>
-            <a href="citacoes.html">Citações</a>
-            <a href="hobbies.html">Hobbies</a>
-            <a href="favoritos.html">Favoritos</a>
-            <a href="horario.html">Horários</a>
-            <a href="marcar.html">Marcar horário</a>
-        </nav>
-        <hr>
-    </header>
-    
-    <section>
-        <h3>Marcar horário</h3>
-
-        <form action="./index.html">
-            <fieldset>
-                <br>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required><br><br>
-
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="assunto">Assunto:</label><br>
-                <input type="text" id="assunto" name="assunto" required><br><br>
-
-                <label for="idade">Idade:</label><br>
-                <input type="number" id="idade" name="idade" min="1" required><br><br>
-
-                <label for="sexo">Sexo:</label><br>
-                <input type="radio" id="feminino" name="sexo" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <input type="radio" id="masculino" name="sexo" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <input type="radio" id="outro" name="sexo" value="outro" required>
-                <label for="outro">Outro</label><br><br>
-
-                <label for="data">Dia:</label><br>
-                <input type="date" id="data" name="data" required><br><br>
-
-                <label for="horario">Horário:</label><br>
-                <input type="time" id="horario" name="horario" required><br><br>
-
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
-
-                <label for="arquivo">Adicionar Arquivo:</label><br>
-                <input type="file" id="arquivo" name="arquivo"><br><br>
-
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
-    </section>
-
-    <hr>
-    <footer>
-        <p>Feito por Ícaro Vieira</p>
-    </footer>
-    <hr>
-
+                <div class="contatos">
+                    <h2>Contatos</h2>
+                    <div class="icones-contatos">
+                        <a href="https://github.com/Icarodvieira" target="_blank" ><img src="imagens/git-icone.png"></a>
+                        <a href="https://www.linkedin.com/in/icarodvieira/" target="_blank" ><img src="imagens/LinkedIn_logo.png"></a>
+                        <a href="mailto:icarodvieira3@gmail.com" target="_blank" ><img src="imagens/gmail-icone.svg.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Ícaro Vieira. Todos os direitos reservados.</p>
+            <p>Desenvolvido como parte do curso de Front-End I</p>
+        </footer>
+    </div>
 </body>
 </html>
