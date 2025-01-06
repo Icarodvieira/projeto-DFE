@@ -1,0 +1,150 @@
+/* responsividade.css */
+
+/* Ajustes de Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secao-direita {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .container-perfil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-perfil img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .imagens img {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .secao-direita h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ajustes de Responsividade para tablets e telas médias */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .conteudo {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .secao-direita {
+        width: 30%;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .container-perfil img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .imagens img {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+/* Ajustes de Responsividade para a tabela */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;  
+    }
+
+    th, td {
+        white-space: nowrap;  
+        font-size: 0.9em;  
+    }
+}
+
+/* Ajustes de Responsividade para o formulario */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;  /* Adiciona espaçamento interno */
+        width: 100%;  /* Certifica-se de que o formulário ocupe toda a largura */
+    }
+
+    input, textarea {
+        width: 100%;  /* Campos de entrada ocupam toda a largura disponível */
+        padding: 10px;  /* Aumenta o padding para facilitar a digitação */
+        margin: 5px 0;  /* Espaçamento entre os campos */
+    }
+
+    button[type="submit"] {
+        width: 100%;  /* O botão de envio ocupa toda a largura */
+        padding: 14px;  /* Ajusta o tamanho do botão */
+    }
+
+    /* Ajusta os campos de radio para se alinharem melhor em telas menores */
+    .secao-esquerda input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    label {
+        font-size: 1rem;  /* Ajuste no tamanho da fonte dos labels */
+    }
+
+    button[type="submit"] {
+        width: 100%;  /* Botão ocupa toda a largura */
+        padding: 14px;  /* Aumenta o tamanho do botão para maior facilidade de clique */
+    }
+}
+
+/* Responsividade para o sobre mim */
+@media (max-width: 768px) {
+    .informacoes {
+        grid-template-columns: 1fr 1fr; /* Exibe 2 colunas */
+    }
+
+    .informacao {
+        padding: 10px;
+    }
+}
+
+/* Responsividade para o sobre mim */
+@media (max-width: 480px) {
+    .informacoes {
+        grid-template-columns: 1fr; 
+    }
+
+    .informacao {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
